@@ -1,0 +1,3 @@
+export const FETCH_MEETUPS = 'FETCH_MEETUPS';
+export const FETCH_MEETUPSID = 'FETCH_MEETUPID';
+
