@@ -5,7 +5,7 @@ import axios from 'axios';
 const { dispatch } = store;
 
 function fetchMeetups() {
-  return axios.get('http://localhost:3000/api/meetups').then((res) => {
+  return axios.get('https://meetupss.herokuapp.com/api/meetups').then((res) => {
       dispatch({
         type: FETCH_MEETUPS,
         payload: res.data
@@ -13,7 +13,7 @@ function fetchMeetups() {
   }).catch((err) => console.log(err));
 }
 function fetchMeetupsById(id) {
-  return axios.get(`http://localhost:3000/api/meetups/${id}`).then((res) => {
+  return axios.get(`https://meetupss.herokuapp.com/api/meetups/${id}`).then((res) => {
     dispatch({
       type: FETCH_MEETUPSID,
       payload: res.data
